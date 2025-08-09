@@ -85,5 +85,25 @@ SHAP was used for **model interpretability**.
 - **Bias Mitigation** Regular bias audits of ML models.
 - **Responsible Use** Predictions are for **support**, not punitive measures.
 
+
+## Recommendations   
+- NGOs, police, and healthcare providers can securely share and access risk-assessment data.
+- Develop Training Programs: Educate law enforcement and social workers on how to use the predictive tools and dashboards effectively.
+-  Implement a Pilot Program: Launch the risk detection system in a specific, high-risk region to test its efficacy and gather feedback for improvements.
+
+
+## Next steps                                                                                      
+- Model Refinement: Continuously update and retrain the model with more diverse and real-time data to improve accuracy.
+- Ethical Oversight: Establish a dedicated ethics committee to oversee the deployment and use of the predictive system.
+- Expand Data Sources: Integrate additional data, such as call center logs, social media data (with consent), and court records to enhance the model's predictive power.
+- Public Awareness: Launch public campaigns to inform communities about the new system and how they can report potential cases of GBV.
+
+## Conclusion
+- Data reveals clear temporal, demographic, and relationship-based risk patterns.
+- Logistic Regression, Random Forest, and DistilBERT effectively identified high-risk cases.
+- SHAP provided transparency and interpretability.
+- Shifts response from reactive crisis management to proactive prevention and protection.
+-Emphasizes privacy, bias mitigation, and human oversight.
+
 ## Deployment
 https://femsafe-app-dgsfqrxeycprh3gta8sufn.streamlit.app/

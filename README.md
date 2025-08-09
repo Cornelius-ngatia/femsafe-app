@@ -11,7 +11,7 @@ To create a **data-driven, preventative system** that flags high-risk cases earl
 
 ## Stakeholders
 
-- **NGOs & Civil Society Organizations** (e.g., FIDA Kenya, Wangu Kanja Foundation)  
+- **NGOs & Civil Society Organizations**   
   Provide shelters, support survivors, and use risk assessment tools for early interventions.
 - **Law Enforcement Agencies**  
   Identify high-risk individuals or regions and prioritize protective action.
@@ -23,13 +23,12 @@ To create a **data-driven, preventative system** that flags high-risk cases earl
   Allocate resources effectively and design GBV prevention policies.
 - **Survivors & Communities**  
   Receive better protection through proactive risk detection.
-- **Data Scientists & Researchers**  
-  Develop, test, and maintain ethical AI/ML prevention models.
+
 
 ## Objectives
-1. **AI-Powered Risk Detection** — Analyze reported incidents and behavioral patterns to detect early signs of GBV/femicide risk.  
-2. **Safety Features** — Real-time alerts, panic button, and connection to shelters, counseling, and legal aid.  
-3. **Awareness & Education** — Inform users on recognizing abuse, knowing their rights, and building safety plans.
+1. **AI-Powered Risk Detection** Analyze reported incidents and behavioral patterns to detect early signs of GBV/femicide risk.  
+2. **Safety Features** Real-time alerts, panic button, and connection to shelters, counseling, and legal aid.  
+3. **Awareness & Education** Inform users on recognizing abuse, knowing their rights, and building safety plans.
 
 ## Datasets
 - **First Dataset** — Historical femicide cases in Kenya with temporal, geographic, and demographic details.  
@@ -64,8 +63,7 @@ Visual insights generated for:
 Models implemented:
 - **Logistic Regression**
 - **Random Forest**
-- **DistilBERT** (for NLP-based classification)
-
+- **DistilBERT** 
 ### Model Evaluation
 Metrics used:
 - Accuracy  
@@ -74,7 +72,7 @@ Metrics used:
 - F1-score  
 SHAP was used for **model interpretability**.
 
-## 📊 Results
+## Results
 | Model             | Accuracy | Precision | Recall | F1-score |
 |-------------------|----------|-----------|--------|----------|
 | Logistic Regression | 97%      | 100%       | 91%    | 95%      |
@@ -83,9 +81,9 @@ SHAP was used for **model interpretability**.
 
 
 ## Ethical Considerations
-- **Data Privacy** — Ensure sensitive victim data is anonymized.
-- **Bias Mitigation** — Regular bias audits of ML models.
-- **Responsible Use** — Predictions are for **support**, not punitive measures.
+- **Data Privacy**  Ensure sensitive victim data is anonymized.
+- **Bias Mitigation** Regular bias audits of ML models.
+- **Responsible Use** Predictions are for **support**, not punitive measures.
 
 ## Deployment
 https://femsafe-app-dgsfqrxeycprh3gta8sufn.streamlit.app/

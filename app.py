@@ -11,7 +11,7 @@ from ui_config import apply_femsafe_theme, render_sidebar
 # -------------------------------
 # 🔧 CONFIGURATION
 # -------------------------------
-MODEL_PATH = "Cornelius27/femsafe-distilbert"
+MODEL_PATH = "Cornelius27/femsafe-distilbert"  # Hugging Face model
 LABELS = ["Safe", "At Risk", "Immediate Danger"]
 PANIC_THRESHOLD = 2
 LOG_FILE = "panic_log.txt"
@@ -112,13 +112,15 @@ if user_input.strip():
 
     # 🧠 SHAP EXPLANATION
     st.subheader("🧠 Model Explanation (SHAP)")
-    shap_values = explainer([clean_text])
-    st.write("SHAP values (token-level impact):")
-    st.json(shap_values.data)
-
-    # 📚 SHAP Visualization
-    st.subheader("📚 SHAP Visualization")
-    shap.plots.text(shap_values[0])
+    try:
+        shap_values = explainer([clean_text])
+        st.write("SHAP values (token-level impact):")
+        st.json(shap_values.data)
+        # 📚 SHAP Visualization
+        st.subheader("📚 SHAP Visualization")
+        shap.plots.text(shap_values[0])
+    except Exception as e:
+        st.warning(f"SHAP explanation could not be generated: {e}")
 
 # -------------------------------
 # 📁 BATCH UPLOAD
@@ -155,6 +157,9 @@ if uploaded_file:
 st.markdown("---")
 with st.expander("📊 SHAP Summary Plot (Experimental)"):
     try:
-        shap.summary_plot(shap_values.values, feature_names=tokenizer.convert_ids_to_tokens(inputs["input_ids"][0]))
+        shap.summary_plot(
+            shap_values.values,
+            feature_names=tokenizer.convert_ids_to_tokens(inputs["input_ids"][0])
+        )
     except Exception as e:
-        st.warning("Summary plot not available for this input.")
+        st.warning(f"Summary plot not available: {e}")

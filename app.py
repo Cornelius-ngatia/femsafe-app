@@ -11,7 +11,7 @@ from ui_config import apply_femsafe_theme, render_sidebar
 # -------------------------------
 # 🔧 CONFIGURATION
 # -------------------------------
-MODEL_PATH = "distilbert_model_v2/"
+MODEL_PATH = "Cornelius27/femsafe-distilbert"
 LABELS = ["Safe", "At Risk", "Immediate Danger"]
 PANIC_THRESHOLD = 2
 LOG_FILE = "panic_log.txt"

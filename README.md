@@ -31,7 +31,7 @@ To create a **data-driven, preventative system** that flags high-risk cases earl
 2. **Safety Features** — Real-time alerts, panic button, and connection to shelters, counseling, and legal aid.  
 3. **Awareness & Education** — Inform users on recognizing abuse, knowing their rights, and building safety plans.
 
-## 📂 Datasets
+## Datasets
 - **First Dataset** — Historical femicide cases in Kenya with temporal, geographic, and demographic details.  
 - **Second Dataset** — Incident narratives and additional socio-economic factors for NLP modeling. 
 

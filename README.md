@@ -79,7 +79,7 @@ SHAP was used for **model interpretability**.
 |-------------------|----------|-----------|--------|----------|
 | Logistic Regression | 97%      | 100%       | 91%    | 95%      |
 | Random Forest     | 97%      | 97%       | 94%    | 95%      |
-| DistilBERT        | XX%      | XX%       | XX%    | XX%      |
+| DistilBERT        | 97%      | 97%       | 97%    |     |
 
 
 ## Ethical Considerations
@@ -87,3 +87,5 @@ SHAP was used for **model interpretability**.
 - **Bias Mitigation** — Regular bias audits of ML models.
 - **Responsible Use** — Predictions are for **support**, not punitive measures.
 
+## Deployment
+https://femsafe-app-dgsfqrxeycprh3gta8sufn.streamlit.app/

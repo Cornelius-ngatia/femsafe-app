@@ -1,5 +1,10 @@
 transformers
-shap
 streamlit
 streamlit-shap
 joblib
+torch
+emoji
+pandas
+numpy
+shap
+huggingface_hub

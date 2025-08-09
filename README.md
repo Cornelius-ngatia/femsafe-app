@@ -79,7 +79,7 @@ SHAP was used for **model interpretability**.
 |-------------------|----------|-----------|--------|----------|
 | Logistic Regression | 97%      | 100%       | 91%    | 95%      |
 | Random Forest     | 97%      | 97%       | 94%    | 95%      |
-| DistilBERT        | 97%      | 97%       | 97%    |     |
+| DistilBERT        | 97%      | 97%       | 97%    |   97%  |
 
 
 ## Ethical Considerations
